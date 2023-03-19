@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>You Won</title>
+  </head>
+  <body>
+    <div class="Won">
+      <div class="decor">
+        <img class="trpy" src="Trophy.png" alt="Trophy" />
+        <img class="stars" src="Star.png" alt="Stars">
+      </div>
+      <div class="fonts">
+        <h1>HURRAY!!</h1>
+        <h2>YOU WON THE GAME</h2>
+      </div>
+    </div>
+    <a href="index.html"><button class="play_again">PLAY AGAIN</button></a>
+    <div class="rules fadeOut">
+      <h1>Game Rules</h1>
+      <ul>
+        <li>
+          <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+        </li>
+        <li>
+          <p>
+            Agree ahead of time whether you'll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </p>
+        </li>
+        <li>
+          <p>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time.
+          </p>
+        </li>
+        <li>
+          <p>
+            If both players lay down the same hand, each player lays down
+            another hand.
+          </p>
+        </li>
+      </ul>
+      <button class="cancel" onclick="CloseRules()">
+        <img src="cancel.png" alt="Cancel" height="50vh" />
+      </button>
+    </div>
+    <button class="rls" onclick="OpenRules()">RULES</button>
+    <script src="index.js"></script>
+  </body>
+</html>

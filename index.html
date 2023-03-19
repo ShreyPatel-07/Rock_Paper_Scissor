@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stone_Paper_Scissor</title>
+  </head>
+  <body>
+    <div class="title">
+      <div class="name">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+      <div class="score">
+        <div class="computer_score">
+          COMPUTER SCORE
+          <p id="Cscore">0</p>
+        </div>
+        <div class="your_score">
+          YOUR <br />
+          SCORE
+          <p id="Yscore">0</p>
+        </div>
+      </div>
+    </div>
+    <div class="rules">
+      <h1>Game Rules</h1>
+      <ul>
+        <li>
+          <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+        </li>
+        <li>
+          <p>
+            Agree ahead of time whether you'll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </p>
+        </li>
+        <li>
+          <p>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time.
+          </p>
+        </li>
+        <li>
+          <p>
+            If both players lay down the same hand, each player lays down
+            another hand.
+          </p>
+        </li>
+      </ul>
+      <button class="cancel" onclick="CloseRules()">
+        <img src="cancel.png" alt="Cancel" height="50vh" />
+      </button>
+    </div>
+    <button class="rls" onclick="OpenRules()">RULES</button>
+
+    <div class="btn2 fadeOut">
+    <button class="rlsi" onclick="OpenRules()">RULES</button>
+    <a href="Winning_page.html"><button class="nxt">NEXT</button></a>
+    </div>
+
+    <div class="options">
+      <img class="Line1" src="Line.png" alt="Line" />
+      <img class="Line2" src="Line.png" alt="Line" />
+      <img class="Line3" src="Line.png" alt="Line" />
+      <div class="section1">
+        <div class="section2">
+          <button class="Rock" onclick="Vanish()">Rock<img src="Rock1.png" alt="Rock"></button>
+        </div>
+        <div class="section2">
+          <button class="Scissor" onclick="Vanish()">Scissor<img src="Scissor1.png" alt="Scissor"></button>
+        </div>
+      </div>
+      <div class="section2 pap">
+        <button class="Paper" onclick="Vanish()">Paper<img src="Paper1.png" alt="Paper"></button>
+      </div>
+    </div>
+
+    <div class="match fadeOut">
+      <span class="winner">
+        <span class="wn"> YOU WON </span> <br />
+        <span class="apc"> AGAINST PC </span>
+      </span>
+      <div class="pick">
+        <span class="u_pck">YOU PICKED</span>
+        <span class="pc_pck">PC PICKED</span>
+      </div>
+
+      <div class="elipson">
+        <span class="elipson1 fadeOut">
+          <img class="img1" src="Ellipse 4.png" alt="">
+          <img class="img2" src="Ellipse 5.png" alt="">
+          <img class="img3" src="Ellipse 3.png" alt="">
+        </span>
+        <span class="elipson2 fadeOut">
+        <img class="img4" src="Ellipse 4.png" alt="">
+        <img class="img5" src="Ellipse 5.png" alt="">
+        <img class="img6" src="Ellipse 3.png" alt="">
+        </span>
+        <div class="hands">
+          <img class="player_hand" src="./signs/Rock.png" alt="" />
+          <img class="comp_hand" src="./signs/Rock.png" alt="" />
+        </div>
+      </div>
+      <button class="play_again" onclick="Homepage()">PLAY AGAIN</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
