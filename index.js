@@ -1,3 +1,19 @@
+var ruleScreen = document.querySelector(".rules");
+
+//Displaying Rules.
+const OpenRules = () => {
+  ruleScreen.classList.remove("fadeOut");
+  ruleScreen.classList.add("fadeIn");
+  return;
+};
+
+//Hiding Rules.
+const CloseRules = () => {
+  ruleScreen.classList.remove("fadeIn");
+  ruleScreen.classList.add("fadeOut");
+  return;
+};
+
 var Y_Score = localStorage.setItem("Y_Score",document.getElementById("Yscore").textContent);
 var C_Score = localStorage.setItem("C_Score",document.getElementById("Cscore").textContent);
 
@@ -163,22 +179,6 @@ const compareHands = (playerChoice, computerChoise) => {
         return;
       }
     }
-};
-
-var ruleScreen = document.querySelector(".rules");
-
-//Displaying Rules.
-function OpenRules() {
-  ruleScreen.classList.remove("fadeOut");
-  ruleScreen.classList.add("fadeIn");
-  return;
-}
-
-//Hiding Rules.
-const CloseRules = () => {
-  ruleScreen.classList.remove("fadeIn");
-  ruleScreen.classList.add("fadeOut");
-  return;
 };
 
 var Result = document.querySelector(".match");
