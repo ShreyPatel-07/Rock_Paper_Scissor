@@ -1,18 +1,18 @@
 var ruleScreen = document.querySelector(".rules");
 
 //Displaying Rules.
-const OpenRules = () => {
+function OpenRules() {
   ruleScreen.classList.remove("fadeOut");
   ruleScreen.classList.add("fadeIn");
   return;
-};
+}
 
 //Hiding Rules.
-const CloseRules = () => {
+function CloseRules() {
   ruleScreen.classList.remove("fadeIn");
   ruleScreen.classList.add("fadeOut");
   return;
-};
+}
 
 var Y_Score = localStorage.setItem("Y_Score",document.getElementById("Yscore").textContent);
 var C_Score = localStorage.setItem("C_Score",document.getElementById("Cscore").textContent);
